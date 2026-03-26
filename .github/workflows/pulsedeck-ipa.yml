@@ -11,10 +11,6 @@ jobs:
       PROJECT_PATH: PulseDeck.xcodeproj
       ARCHIVE_PATH: build/PulseDeck.xcarchive
       EXPORT_PATH: build/export
-      KEYCHAIN_PATH: ${{ runner.temp }}/build.keychain-db
-      PP_PATH: ${{ runner.temp }}/PulseDeck.mobileprovision
-      EXPORT_OPTIONS_PATH: ${{ runner.temp }}/ExportOptions.plist
-      CERT_P12_PATH: ${{ runner.temp }}/signing.p12
       BUNDLE_ID: ${{ secrets.PULSEDECK_BUNDLE_ID }}
       DEVELOPMENT_TEAM: ${{ secrets.PULSEDECK_DEVELOPMENT_TEAM }}
       APPLE_CERT_BASE64: ${{ secrets.PULSEDECK_CERTIFICATE_P12_BASE64 }}
@@ -31,6 +27,13 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
+
+      - name: Prepare CI paths
+        run: |
+          echo "KEYCHAIN_PATH=$RUNNER_TEMP/build.keychain-db" >> "$GITHUB_ENV"
+          echo "PP_PATH=$RUNNER_TEMP/PulseDeck.mobileprovision" >> "$GITHUB_ENV"
+          echo "EXPORT_OPTIONS_PATH=$RUNNER_TEMP/ExportOptions.plist" >> "$GITHUB_ENV"
+          echo "CERT_P12_PATH=$RUNNER_TEMP/signing.p12" >> "$GITHUB_ENV"
 
       - name: Validate signing secrets
         run: |
