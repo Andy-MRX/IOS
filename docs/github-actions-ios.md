@@ -35,10 +35,10 @@ Set these in:
 ### Required secrets for IPA export
 
 - `PULSEDECK_BUNDLE_ID`
-  - Example: `com.yourcompany.PulseDeck`
+  - Current configured value: `xyz.appinstall.nov.carbon.lam`
 
 - `PULSEDECK_DEVELOPMENT_TEAM`
-  - Your Apple Developer Team ID
+  - Current configured value: `ZDV8SQG3XZ`
 
 - `PULSEDECK_CERTIFICATE_P12_BASE64`
   - Your signing certificate exported as `.p12`, then base64 encoded
@@ -54,10 +54,8 @@ Set these in:
 
 - `PULSEDECK_EXPORT_OPTIONS_PLIST_BASE64`
   - A base64 encoded `ExportOptions.plist`
-  - You can start from one of:
-    - `export/ExportOptions-AdHoc-RB9U27YPWF.plist`
-    - `export/ExportOptions-AdHoc.plist.example`
-    - `export/ExportOptions-AppStore.plist.example`
+  - Current recommended file:
+    - `export/ExportOptions-Enterprise-ZDV8SQG3XZ.plist`
 
 ---
 
