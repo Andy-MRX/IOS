@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000030 /* PulseDeckApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* PulseDeckApp.swift */; };
+		AA0000000000000000000031 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* RootTabView.swift */; };
+		AA0000000000000000000032 /* PulseDeckStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000012 /* PulseDeckStore.swift */; };
+		AA0000000000000000000033 /* PulseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* PulseModels.swift */; };
+		AA0000000000000000000034 /* LiveTelemetryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* LiveTelemetryMonitor.swift */; };
+		AA0000000000000000000035 /* DemoTelemetryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* DemoTelemetryMonitor.swift */; };
+		AA0000000000000000000036 /* PulseTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000016 /* PulseTheme.swift */; };
+		AA0000000000000000000037 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000017 /* DashboardView.swift */; };
+		AA0000000000000000000038 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000018 /* TimelineView.swift */; };
+		AA0000000000000000000039 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000019 /* SettingsView.swift */; };
+		AA000000000000000000003A /* NeonComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001A /* NeonComponents.swift */; };
+		AA000000000000000000003B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000001C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000010 /* PulseDeckApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseDeckApp.swift; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000012 /* PulseDeckStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseDeckStore.swift; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* PulseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseModels.swift; sourceTree = "<group>"; };
+		AA0000000000000000000014 /* LiveTelemetryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTelemetryMonitor.swift; sourceTree = "<group>"; };
+		AA0000000000000000000015 /* DemoTelemetryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTelemetryMonitor.swift; sourceTree = "<group>"; };
+		AA0000000000000000000016 /* PulseTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PulseTheme.swift; sourceTree = "<group>"; };
+		AA0000000000000000000017 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000018 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000019 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		AA000000000000000000001A /* NeonComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeonComponents.swift; sourceTree = "<group>"; };
+		AA000000000000000000001B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000000000000000000001C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA000000000000000000001D /* PulseDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PulseDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000000000000000000041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000004 /* App */,
+				AA0000000000000000000005 /* Core */,
+				AA0000000000000000000006 /* Features */,
+				AA0000000000000000000007 /* Shared */,
+				AA0000000000000000000008 /* Resources */,
+				AA0000000000000000000003 /* Products */,
+			);
+			path = PulseDeck;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000001D /* PulseDeck.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000004 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000010 /* PulseDeckApp.swift */,
+				AA0000000000000000000011 /* RootTabView.swift */,
+				AA0000000000000000000012 /* PulseDeckStore.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000009 /* Models */,
+				AA000000000000000000000A /* Monitoring */,
+				AA000000000000000000000B /* Theme */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000006 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000C /* Dashboard */,
+				AA000000000000000000000D /* Timeline */,
+				AA000000000000000000000E /* Settings */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000007 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000F /* Components */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000008 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000001B /* Info.plist */,
+				AA000000000000000000001C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000009 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000013 /* PulseModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000A /* Monitoring */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000014 /* LiveTelemetryMonitor.swift */,
+				AA0000000000000000000015 /* DemoTelemetryMonitor.swift */,
+			);
+			path = Monitoring;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000B /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000016 /* PulseTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000C /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000017 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000D /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000018 /* TimelineView.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000019 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000000F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000001A /* NeonComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000000000000000000040 /* PulseDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000044 /* Build configuration list for PBXNativeTarget "PulseDeck" */;
+			buildPhases = (
+				AA0000000000000000000041 /* Frameworks */,
+				AA0000000000000000000042 /* Sources */,
+				AA0000000000000000000043 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PulseDeck;
+			packageProductDependencies = (
+			);
+			productName = PulseDeck;
+			productReference = AA000000000000000000001D /* PulseDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA000000000000000000004A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				ORGANIZATIONNAME = PulseDeck;
+				TargetAttributes = {
+					AA0000000000000000000040 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = AA0000000000000000000045 /* Build configuration list for PBXProject "PulseDeck" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000002;
+			productRefGroup = AA0000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000040 /* PulseDeck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000000000000000000043 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000003B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000000000000000000042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000030 /* PulseDeckApp.swift in Sources */,
+				AA0000000000000000000031 /* RootTabView.swift in Sources */,
+				AA0000000000000000000032 /* PulseDeckStore.swift in Sources */,
+				AA0000000000000000000033 /* PulseModels.swift in Sources */,
+				AA0000000000000000000034 /* LiveTelemetryMonitor.swift in Sources */,
+				AA0000000000000000000035 /* DemoTelemetryMonitor.swift in Sources */,
+				AA0000000000000000000036 /* PulseTheme.swift in Sources */,
+				AA0000000000000000000037 /* DashboardView.swift in Sources */,
+				AA0000000000000000000038 /* TimelineView.swift in Sources */,
+				AA0000000000000000000039 /* SettingsView.swift in Sources */,
+				AA000000000000000000003A /* NeonComponents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA0000000000000000000046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PulseDeck/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PulseDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AA0000000000000000000047 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = PulseDeck/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.PulseDeck;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AA0000000000000000000048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA0000000000000000000049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000044 /* Build configuration list for PBXNativeTarget "PulseDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000046 /* Debug */,
+				AA0000000000000000000047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000045 /* Build configuration list for PBXProject "PulseDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000048 /* Debug */,
+				AA0000000000000000000049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA000000000000000000004A /* Project object */;
+}
