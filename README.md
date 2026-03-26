@@ -8,7 +8,7 @@ PulseDeck is a SwiftUI iPhone app concept for real-time phone-performance monito
 - Better event model with explicit event origins (`System`, `Inferred`, `Demo`, `App`) and timeline filtering
 - More complete settings for presentation tuning, timeline behavior, and project/export reminders
 - Shared Xcode scheme, XcodeGen scheme config, and helper scripts/docs for later macOS archive and IPA export work
-- GitHub Actions workflows for simulator CI and signed IPA export on macOS runners
+- GitHub Actions workflows for simulator CI, unsigned Mach-O export, and signed IPA export on macOS runners
 
 ## Trust model: real vs estimated vs placeholder
 
@@ -81,6 +81,8 @@ This repo now includes:
 
 - `.github/workflows/pulsedeck-ci.yml`
   - builds the app for **iOS Simulator** on GitHub-hosted macOS without signing
+- `.github/workflows/pulsedeck-macho.yml`
+  - builds an **unsigned iPhoneOS Mach-O binary** and uploads it as an artifact
 - `.github/workflows/pulsedeck-ipa.yml`
   - imports your certificate/profile, archives the app, and exports a signed IPA artifact
 

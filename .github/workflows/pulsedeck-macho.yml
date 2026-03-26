@@ -1,0 +1,52 @@
+name: PulseDeck Mach-O Export
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-macho:
+    runs-on: macos-15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Build iPhoneOS binary without signing
+        run: |
+          xcodebuild \
+            -project PulseDeck.xcodeproj \
+            -scheme PulseDeck \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination generic/platform=iOS \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            clean build
+
+      - name: Collect Mach-O artifacts
+        run: |
+          mkdir -p build/artifacts
+          APP_PATH=$(find ~/Library/Developer/Xcode/DerivedData -path '*Release-iphoneos/PulseDeck.app' | head -n 1)
+          if [[ -z "$APP_PATH" ]]; then
+            echo "Could not find built .app bundle" >&2
+            exit 1
+          fi
+          BIN_PATH="$APP_PATH/PulseDeck"
+          cp "$BIN_PATH" build/artifacts/PulseDeck-macho
+          file "$BIN_PATH" > build/artifacts/file-report.txt || true
+          ls -lah "$APP_PATH" > build/artifacts/app-bundle-list.txt
+
+      - name: Upload Mach-O artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PulseDeck-macho
+          path: |
+            build/artifacts/PulseDeck-macho
+            build/artifacts/file-report.txt
+            build/artifacts/app-bundle-list.txt
+          if-no-files-found: error
