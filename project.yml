@@ -35,13 +35,13 @@ targets:
       path: PulseDeck/Resources/Info.plist
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: xyz.appinstall.nov.carbon.lam
-        DEVELOPMENT_TEAM: ZDV8SQG3XZ
+        PRODUCT_BUNDLE_IDENTIFIER: com.xl.MyXL.Giant-staging
+        DEVELOPMENT_TEAM: Q6SJUT5K5D
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
         CODE_SIGN_STYLE: Manual
         CODE_SIGN_IDENTITY: iPhone Distribution
-        PROVISIONING_PROFILE_SPECIFIER: CarbonLAM_Dist_Jan262026
+        PROVISIONING_PROFILE_SPECIFIER: MyXL-UniversalDist
         CURRENT_PROJECT_VERSION: 1
         GENERATE_INFOPLIST_FILE: NO
         MARKETING_VERSION: 0.1.0

@@ -271,7 +271,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZDV8SQG3XZ;
+				DEVELOPMENT_TEAM = Q6SJUT5K5D;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = PulseDeck/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -280,9 +280,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.appinstall.nov.carbon.lam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xl.MyXL.Giant-staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = CarbonLAM_Dist_Jan262026;
+				PROVISIONING_PROFILE_SPECIFIER = MyXL-UniversalDist;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -299,7 +299,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZDV8SQG3XZ;
+				DEVELOPMENT_TEAM = Q6SJUT5K5D;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = PulseDeck/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -308,9 +308,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = xyz.appinstall.nov.carbon.lam;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xl.MyXL.Giant-staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = CarbonLAM_Dist_Jan262026;
+				PROVISIONING_PROFILE_SPECIFIER = MyXL-UniversalDist;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
