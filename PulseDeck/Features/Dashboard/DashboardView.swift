@@ -365,7 +365,7 @@ struct DashboardView: View {
             secondaryText: "\(PulseFormatters.bytes(store.snapshot.storage.availableBytes)) free",
             statusText: "App-visible volume capacity",
             deltaText: PulseFormatters.delta(
-                current: store.storageHistory.last?.value.map { $0 * 100 },
+                current: store.storageHistory.last.map { $0.value * 100 },
                 previous: store.previousValue(in: store.storageHistory).map { $0 * 100 },
                 suffix: "%"
             ),

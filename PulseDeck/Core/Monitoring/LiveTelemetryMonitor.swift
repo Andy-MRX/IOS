@@ -236,8 +236,8 @@ private struct StorageInspector {
                 .volumeTotalCapacityKey
             ])
 
-            let total = values.volumeTotalCapacity.map(Int64.init)
-            let available = values.volumeAvailableCapacityForImportantUsage.map(Int64.init)
+            let total = values.volumeTotalCapacity.flatMap { Int64($0) }
+            let available = values.volumeAvailableCapacityForImportantUsage.flatMap { Int64($0) }
 
             return StorageSnapshot(
                 totalBytes: total,
