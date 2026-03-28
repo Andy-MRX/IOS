@@ -253,7 +253,7 @@ struct DashboardView: View {
             secondaryText: store.snapshot.battery.stateDescription + (store.snapshot.battery.isLowPowerModeEnabled ? " • Low Power" : ""),
             statusText: store.snapshot.battery.level == nil ? "Waiting for hardware battery" : "Direct UIDevice battery signal",
             deltaText: PulseFormatters.delta(
-                current: store.batteryHistory.last?.value.map { $0 * 100 },
+                current: store.batteryHistory.last.map { $0.value * 100 },
                 previous: store.previousValue(in: store.batteryHistory).map { $0 * 100 },
                 suffix: "%"
             ),
